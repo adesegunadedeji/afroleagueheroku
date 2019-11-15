@@ -1,0 +1,28 @@
+{
+  "name": "afro_league_api",
+  "version": "1.0.0",
+  "engine":{
+    "node" : "6.3.1"
+  },
+  "description": "This README would normally document whatever steps are necessary to get the application up and running.",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd client && npm install && npm build && cd ..",
+    "deploy": "cp -a client/build/. public/",
+    "postinstall": "npm run build && npm run deploy && echo 'Client built!'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adesegunadedeji/afroLeague.git"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adesegunadedeji/afroLeague/issues"
+  },
+  "homepage": "https://github.com/adesegunadedeji/afroLeague#readme"
+}
